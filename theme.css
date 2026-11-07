@@ -120,3 +120,9 @@
 .theme-dark .markdown-source-view.mod-cm6 .cm-line span.cm-highlight * {
 	color: #1e1e3f;
 }
+
+/* Native primary caret only; Vim draws its own cursor in a separate layer. */
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor:not([class~="cm-vimMode"]) .cm-highlight,
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor:not([class~="cm-vimMode"]) .cm-formatting-highlight {
+	caret-color: var(--background-primary);
+}
